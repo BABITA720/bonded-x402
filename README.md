@@ -13,6 +13,10 @@ Paid APIs and AI agents have no way to prove reliability before payment. Buyers 
 ## Live on Devnet
 - Program ID: `CtXSSkVzvobPWuLZeciRcKa3fyXTUEgwmS1sUQnK9QZz`
 - Example Create Bond transaction: [Solana Explorer](https://explorer.solana.com/tx/3m5U8MVbVS7TmPGCZTEbfdqW8eeQFTBrMVe6GUgPe3GKgd8BB2VT6rkr3AH1JFcutEbLcXeTkFSaQ7dcLWHpFSCk?cluster=devnet)
+## Testing notes
+- One bond per provider wallet (PDA seed design: `["bond", provider]`).
+- Demo bond already created on Devnet: [Explorer](https://explorer.solana.com/tx/3m5U8MVbVS7TmPGCZTEbfdqW8eeQFTBrMVe6GUgPe3GKgd8BB2VT6rkr3AH1JFcutEbLcXeTkFSaQ7dcLWHpFSCk?cluster=devnet)
+- To test with a fresh wallet: create a new Phantom account, switch to Devnet, get SOL from faucet.solana.com, then request test mint tokens and run Create Bond.
 
 ## Architecture
 | Account | Seeds |
